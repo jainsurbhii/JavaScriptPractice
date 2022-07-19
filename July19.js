@@ -8,17 +8,21 @@ Example:
 [1 1 1 1 1 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0]
 Result: 10 Days*/
 
-let arr=[1,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0]
+let arr=[1,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,1,1]
 let count=0;
 let maxvalue=0;
+let result=0;
 for(let i=0;i<arr.length;i++){
     if(arr[i]===1){
         count++;
-        maxvalue=count;
+        if (count>result)
+        {
+            result=count;
+        }
     }
     else {
         count=0;
     }
 
 }
-console.log(maxvalue);
+console.log(result);
