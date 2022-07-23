@@ -14,7 +14,7 @@ for(let i=0;i<str.length;i++){
     let y= str.substring(i,i+3)
     console.log(y);
 }*/
-let str = "abcd";
+let str = "abceiouklljgg";
 for(let j=1;j <= str.length;j++) {
     for (let i = 0; i < str.length; i++) {
         let y = str.substring(i, i +j)
@@ -23,6 +23,21 @@ for(let j=1;j <= str.length;j++) {
         }
     }
 }
+
+function checkChar(str1,n){
+    for(let i=0;i<str1.length;i++)
+    {
+        if(str1.charAt(i)===n){
+           return true;
+        }
+    }
+    return false;
+}
+
+/*
+* str1=abcde, n=c
+*
+* */
 
 
 
